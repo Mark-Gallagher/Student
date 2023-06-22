@@ -1,11 +1,10 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import java.time.LocalDate;
-import java.time.Month;
 
 import static java.util.Calendar.OCTOBER;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
 public class StudentTest {
@@ -14,7 +13,7 @@ public class StudentTest {
 
     @BeforeEach
     public void studentCstr(){
-        stud = new Student(1001,"Declan Maher","dec-maher@atu.ie",LocalDate.of(1998, OCTOBER, 16), "Tipperary");
+        stud = new Student("ATU1001","Declan Maher","dec-maher@atu.ie",LocalDate.of(1998, OCTOBER, 16), "Tipperary");
     }
 
     @Test
@@ -24,12 +23,12 @@ public class StudentTest {
 
     @Test
     public void testEmail(){
-        assertEquals("dec_maher@atu.ie",stud.getEmail());
+        assertEquals("dec-maher@atu.ie",stud.getEmail());
     }
 
     @Test
     public void testStudentId(){
-        assertEquals(1001, stud.getStudentId());
+        assertEquals("ATU1001", stud.getStudentId());
     }
 
     @Test
@@ -42,5 +41,11 @@ public class StudentTest {
         assertEquals("Tipperary", stud.getLocation());
     }
 
+    @Test
+    void testConstructorInvalidId(){
+        final String invalidId = "Invalid student id number Entered!";
+        Exception exception = assertThrows(IllegalArgumentException.class, ()-> new Student("ATU10012","Declan Maher","dec-maher@atu.ie",LocalDate.of(1998, OCTOBER, 16), "Tipperary"));
+        assertEquals(invalidId,exception.getMessage());
+    }
 
 }
