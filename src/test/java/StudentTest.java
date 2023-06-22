@@ -24,7 +24,7 @@ public class StudentTest {
 
     @Test
     public void testEmail(){
-        assertEquals("dec_maher@atu.ie",stud.getEmail());
+        assertEquals("dec-maher@atu.ie",stud.getEmail());
     }
 
     @Test
