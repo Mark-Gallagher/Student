@@ -57,9 +57,9 @@ public class StudentTest {
 
     @Test
     void testConstructorInvalidEmail(){
-        final String invalidName = "Invalid student email Entered!";
+        final String invalidEmail = "Invalid student email Entered!";
         Exception exception = assertThrows(IllegalArgumentException.class, ()-> new Student("ATU1001","Declan Maher","dec-maher@uta.ei",LocalDate.of(1998, OCTOBER, 16), "Tipperary"));
-        assertEquals(invalidName,exception.getMessage());
+        assertEquals(invalidEmail,exception.getMessage());
     }
 
 }
