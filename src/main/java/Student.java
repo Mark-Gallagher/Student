@@ -2,32 +2,33 @@ import java.time.LocalDate;
 
 public class Student {
 
-    private int studentId;
+    private String student_id;
     private String name;
     private String email;
     private LocalDate dob;
     private String location;
 
-    public Student(int studentId, String name, String email, LocalDate dob, String location) {
-        this.studentId = studentId;
-        this.name = name;
-        this.email = email;
-        this.dob = dob;
-        this.location = location;
+    public Student(String student_id, String name, String email, LocalDate dob, String location) {
+       setStudentId(student_id);
+       setName(name);
+       setEmail(email);
+       setDob(dob);
+       setLocation(location);
     }
 
-    public Student(int studentId, String name, String email) {
-        this.studentId = studentId;
-        this.name = name;
-        this.email = email;
+
+    public String getStudentId() {
+        return student_id;
     }
 
-    public int getStudentId() {
-        return studentId;
-    }
-
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
+    public void setStudentId(String student_id) {
+        if(student_id.length() >= 4 && student_id.length() < 7){
+            this.student_id = student_id;
+        }
+        else{
+            String message = "Invalid student id number Entered!";
+            throw new IllegalArgumentException(message);
+        }
     }
 
     public String getName() {
@@ -65,7 +66,7 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "studentId=" + studentId +
+                "studentId=" + student_id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", dob=" + dob +
