@@ -71,7 +71,7 @@ public class Student {
            this.dob = dob;
        }
        else{
-           String message = "Invalid student location Entered!";
+           String message = "Invalid student date_of_birth Entered!";
            throw new IllegalArgumentException(message);
        }
     }
