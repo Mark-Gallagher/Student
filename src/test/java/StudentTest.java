@@ -48,4 +48,18 @@ public class StudentTest {
         assertEquals(invalidId,exception.getMessage());
     }
 
+    @Test
+    void testConstructorInvalidName(){
+        final String invalidName = "Invalid student name Entered!";
+        Exception exception = assertThrows(IllegalArgumentException.class, ()-> new Student("ATU1001","Dec","dec-maher@atu.ie",LocalDate.of(1998, OCTOBER, 16), "Tipperary"));
+        assertEquals(invalidName,exception.getMessage());
+    }
+
+    @Test
+    void testConstructorInvalidEmail(){
+        final String invalidName = "Invalid student email Entered!";
+        Exception exception = assertThrows(IllegalArgumentException.class, ()-> new Student("ATU1001","Declan Maher","dec-maher@uta.ei",LocalDate.of(1998, OCTOBER, 16), "Tipperary"));
+        assertEquals(invalidName,exception.getMessage());
+    }
+
 }

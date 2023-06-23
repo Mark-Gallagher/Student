@@ -22,7 +22,7 @@ public class Student {
     }
 
     public void setStudentId(String student_id) {
-        if(student_id.length() >= 4 && student_id.length() < 7){
+        if(student_id.length() >= 4 && student_id.length() <= 7){
             this.student_id = student_id;
         }
         else{
@@ -36,7 +36,12 @@ public class Student {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (name.length() >= 4) {
+            this.name = name;
+        } else {
+            String message = "Invalid student name Entered!";
+            throw new IllegalArgumentException(message);
+        }
     }
 
     public String getEmail() {
@@ -44,7 +49,12 @@ public class Student {
     }
 
     public void setEmail(String email) {
-        this.email = email;
+       if(email.contains("@atu.ie")){
+           this.email =email;
+       }else{
+           String message = "Invalid student email Entered!";
+           throw new IllegalArgumentException(message);
+       }
     }
 
     public LocalDate getDob() {

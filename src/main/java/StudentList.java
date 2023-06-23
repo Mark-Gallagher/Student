@@ -1,13 +1,13 @@
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class StudentList {
     public static void main(String[] args) {
 
+
         ArrayList<String> studentName = new ArrayList<>();
         studentName.add("Chris Barry");
         studentName.add("Joe O'Donnell");
-        studentName.add( "Nicole McCarthy");
+        studentName.add("Nicole McCarthy");
 
         ArrayList<String> studentEmail = new ArrayList<>();
         studentEmail.add("cbarry@atu.ie");
