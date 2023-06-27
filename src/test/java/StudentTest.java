@@ -72,7 +72,7 @@ public class StudentTest {
     @Test
     void testConstructorInvalidLocation(){
         final String invalidLocation = "Invalid student location Entered!";
-        Exception exception = assertThrows(IllegalArgumentException.class, ()-> new Student("ATU1001","Declan Maher","dec-maher@atu.ie",LocalDate.of(1995, OCTOBER, 16), "Tip"));
+        Exception exception = assertThrows(IllegalArgumentException.class, ()-> new Student("ATU1001","Declan Maher","dec-maher@atu.ie",LocalDate.of(1998, OCTOBER, 16), "Tip"));
         assertEquals(invalidLocation,exception.getMessage());
     }
 
