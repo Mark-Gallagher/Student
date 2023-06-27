@@ -1,10 +1,9 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import java.time.LocalDate;
 
+import java.time.LocalDate;
 import static java.util.Calendar.OCTOBER;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class StudentTest {
@@ -41,6 +40,13 @@ public class StudentTest {
         assertEquals("Tipperary", stud.getLocation());
     }
 
+//    @Test
+//    public void testToString(){
+//        ToStringVerifier.forClass(Student.class)
+//                .withClassName(NameStyle.NAME)
+//                .verify();
+//    }
+
     @Test
     void testConstructorInvalidId(){
         final String invalidId = "Invalid student id number Entered!";
@@ -72,7 +78,7 @@ public class StudentTest {
     @Test
     void testConstructorInvalidLocation(){
         final String invalidLocation = "Invalid student location Entered!";
-        Exception exception = assertThrows(IllegalArgumentException.class, ()-> new Student("ATU1001","Declan Maher","dec-maher@atu.ie",LocalDate.of(1995, OCTOBER, 16), "Tip"));
+        Exception exception = assertThrows(IllegalArgumentException.class, ()-> new Student("ATU1001","Declan Maher","dec-maher@atu.ie",LocalDate.of(1998, OCTOBER, 16), "Tip"));
         assertEquals(invalidLocation,exception.getMessage());
     }
 
