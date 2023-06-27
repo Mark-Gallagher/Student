@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Calendar;
 
 public class Student {
 
@@ -38,7 +39,8 @@ public class Student {
     public void setName(String name) {
         if (name.length() >= 4) {
             this.name = name;
-        } else {
+        }
+        else{
             String message = "Invalid student name Entered!";
             throw new IllegalArgumentException(message);
         }
@@ -51,7 +53,9 @@ public class Student {
     public void setEmail(String email) {
        if(email.contains("@atu.ie")){
            this.email =email;
-       }else{
+       }
+       else
+       {
            String message = "Invalid student email Entered!";
            throw new IllegalArgumentException(message);
        }
@@ -62,7 +66,14 @@ public class Student {
     }
 
     public void setDob(LocalDate dob) {
-        this.dob = dob;
+        LocalDate ld = LocalDate.of(1996,05,01);
+       if(dob.isAfter(ld) == true) {
+           this.dob = dob;
+       }
+       else{
+           String message = "Invalid student date_of_birth Entered!";
+           throw new IllegalArgumentException(message);
+       }
     }
 
     public String getLocation() {
@@ -70,7 +81,15 @@ public class Student {
     }
 
     public void setLocation(String location) {
-        this.location = location;
+
+        if(location.length() >= 4){
+            this.location = location;
+        }
+        else{
+            String message = "Invalid student location Entered!";
+            throw new IllegalArgumentException(message);
+        }
+
     }
 
     @Override

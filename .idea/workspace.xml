@@ -7,13 +7,8 @@
     <list default="true" id="ee6a0136-acd7-4446-bce8-38c1e1be1502" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StudentList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StudentList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StudentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StudentList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StudentList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/StudentTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/StudentTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-StudentTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-StudentTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/StudentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StudentTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,19 +50,13 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.6229885&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.StudentTest.testConstructorInvalidEmail">
-    <configuration name="StudentList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StudentList" />
-      <module name="Student" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StudentTest.testConstructorInvalidLocation">
+    <configuration name="StudentTest.testConstructorInvalidDob" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Student" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StudentTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testConstructorInvalidDob" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,6 +81,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentTest.testConstructorInvalidLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Student" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StudentTest" />
+      <option name="METHOD_NAME" value="testConstructorInvalidLocation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentTest.testConstructorInvalidName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Student" />
       <option name="PACKAGE_NAME" value="" />
@@ -103,19 +102,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.StudentList" />
+      <item itemvalue="JUnit.StudentTest.testConstructorInvalidDob" />
       <item itemvalue="JUnit.StudentTest.testConstructorInvalidEmail" />
+      <item itemvalue="JUnit.StudentTest.testConstructorInvalidLocation" />
       <item itemvalue="JUnit.StudentTest.testConstructorInvalidName" />
-      <item itemvalue="JUnit.StudentTest" />
       <item itemvalue="JUnit.StudentTest.testConstructorInvalidId" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentTest.testConstructorInvalidLocation" />
+        <item itemvalue="JUnit.StudentTest.testConstructorInvalidDob" />
         <item itemvalue="JUnit.StudentTest.testConstructorInvalidEmail" />
         <item itemvalue="JUnit.StudentTest.testConstructorInvalidName" />
         <item itemvalue="JUnit.StudentTest.testConstructorInvalidId" />
-        <item itemvalue="Application.StudentList" />
-        <item itemvalue="JUnit.StudentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +140,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="feature-four" />
                       </list>
                     </value>
                   </entry>
