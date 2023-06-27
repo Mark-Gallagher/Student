@@ -1,34 +1,68 @@
-import java.util.ArrayList;
+
+
+import java.time.LocalDate;
 
 public class StudentList {
-    public static void main(String[] args) {
+    private String studentId;
+    private String studentName;
+    private String studentEmail;
+    private String studentLocation;
+    private LocalDate studentDob;
 
-     
-        ArrayList<String> student_Id = new ArrayList<>();
-        student_Id.add("ATU1003");
-        student_Id.add("ATU1004");
-        student_Id.add("ATU1005");
-
-        ArrayList<String> studentName = new ArrayList<>();
-        studentName.add("Chris Barry");
-        studentName.add("Joe O'Donnell");
-        studentName.add("Nicole McCarthy");
-
-        ArrayList<String> studentEmail = new ArrayList<>();
-        studentEmail.add("cbarry@atu.ie");
-        studentEmail.add("jOdonnell@atu.ie");
-        studentEmail.add("nicolemccarthy@atu.ie");
-
-        ArrayList<String> studentLocation = new ArrayList<>();
-        studentLocation.add("Cork");
-        studentLocation.add("Clare");
-        studentLocation.add("Galway");
-
-        System.out.println(student_Id);
-        System.out.println(studentName);
-        System.out.println(studentEmail);
-        System.out.println(studentLocation);
-
-
+    public StudentList(String studentId, String studentName, String studentEmail, String studentLocation, LocalDate studentDob) {
+        this.studentId = studentId;
+        this.studentName = studentName;
+        this.studentEmail = studentEmail;
+        this.studentLocation = studentLocation;
+        this.studentDob = studentDob;
     }
-}
+
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public String getStudentEmail() {
+        return studentEmail;
+    }
+
+    public void setStudentEmail(String studentEmail) {
+        this.studentEmail = studentEmail;
+    }
+
+    public String getStudentLocation() {
+        return studentLocation;
+    }
+
+    public void setStudentLocation(String studentLocation) {
+        this.studentLocation = studentLocation;
+    }
+
+    public LocalDate getStudentDob() {
+        return studentDob;
+    }
+
+    public void setStudentDob(LocalDate studentDob) {
+        this.studentDob = studentDob;
+    }
+
+    @Override
+    public String toString() {
+        return "StudentList{" +
+                "studentId=" + studentId +
+                ", studentName='" + studentName + '\'' +
+                ", studentEmail='" + studentEmail + '\'' +
+                ", studentLocation='" + studentLocation + '\'' +
+                ", studentDob=" + studentDob +
+             
