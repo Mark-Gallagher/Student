@@ -40,12 +40,16 @@ public class StudentTest {
         assertEquals("Tipperary", stud.getLocation());
     }
 
-//    @Test
-//    public void testToString(){
-//        ToStringVerifier.forClass(Student.class)
-//                .withClassName(NameStyle.NAME)
-//                .verify();
-//    }
+    @Test
+    public void testToString(){
+         assertEquals("Student{" +
+                "studentId=" + stud.getStudentId() +
+                ", name='" + stud.getName() + '\'' +
+                ", email='" + stud.getEmail() + '\'' +
+                ", dob=" + stud.getDob() +
+                ", location='" + stud.getLocation() + '\'' +
+                '}', stud.toString());
+    }
 
     @Test
     void testConstructorInvalidId(){
