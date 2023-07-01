@@ -38,5 +38,33 @@ public class StudentListTest {
         assertEquals("Nicole McCarthy",studentlist[2].getStudentName());
     }
 
+    
+    @Test
+    public void testConstructorInvalidStudentId(){
+        final String [] actual = new String[] {"ATU100a","ATU100b","ATU100c","ATU100d"};
+        final String [] expected = new String[] {"ATU1005","ATU1006","ATU1007","ATU1008"};
+
+        assertThat(actual)
+                .overridingErrorMessage(
+                        "Expected arrays to not be equal but both are: %s",
+                        Arrays.toString(expected)
+                )
+                .isNotEqualTo(expected);
+
+    }
+
+    @Test
+    public void testConstructorInvalidStudentName(){
+        final String [] actual = new String[] {"Chriss Barryy","Joee O'Donnoll","Nickole MacCarthy"};
+        final String [] expected = new String[] {"Chris Barry","Joe O'Donnell","Nicole McCarthy"};
+
+        assertThat(actual)
+                .overridingErrorMessage(
+                        "Expected arrays to not be equal but both are: %s",
+                        Arrays.toString(expected)
+                )
+                .isNotEqualTo(expected);
+
+    }
 
 }
