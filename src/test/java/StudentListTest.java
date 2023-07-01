@@ -1,14 +1,10 @@
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
-
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
-
-
 import static java.util.Calendar.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 
 @DisplayName("StudentList")
 public class StudentListTest {
@@ -19,13 +15,6 @@ public class StudentListTest {
             new StudentList("ATU1004","Nicole McCarthy", "nicolemccarthy@atu.ie","Galway", LocalDate.of(2000, SEPTEMBER, 07)),
     };
 
-    @Test
-    public void testStudentId(){
-        assertEquals("ATU1002",studentlist[0].getStudentId());
-        assertEquals("ATU1003",studentlist[1].getStudentId());
-        assertEquals("ATU1004",studentlist[2].getStudentId());
-    }
-
     @DisplayName("List & Display Students")
     @Test
     public void listStudents(){
@@ -35,6 +24,13 @@ public class StudentListTest {
         students.stream().forEach(System.out::println);
     }
 
+    @Test
+    public void testStudentId(){
+        assertEquals("ATU1002",studentlist[0].getStudentId());
+        assertEquals("ATU1003",studentlist[1].getStudentId());
+        assertEquals("ATU1004",studentlist[2].getStudentId());
+    }
+    
     @Test
     public void testStudentName(){
         assertEquals("Chris Barry",studentlist[0].getStudentName());
