@@ -15,8 +15,6 @@ public class StudentListTest {
             new StudentList("ATU1004","Nicole McCarthy", "nicolemccarthy@atu.ie","Galway", LocalDate.of(2000, SEPTEMBER, 07)),
     };
 
-    @DisplayName("List & Display Students")
-    @Test
     public void listStudents(){
         List<StudentList> students = Arrays.asList(studentlist);
 
