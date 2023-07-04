@@ -1,36 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StudentList.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Student</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">StudentList.java</span></div><h1>StudentList.java</h1><pre class="source lang-java linenums">import java.util.ArrayList;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StudentList.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Student</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">StudentList.java</span></div><h1>StudentList.java</h1><pre class="source lang-java linenums">import java.time.LocalDate;
 
-<span class="nc" id="L3">public class StudentList {</span>
-    public static void main(String[] args) {
+public class StudentList {
+    private String studentId;
+    private String studentName;
+    private String studentEmail;
+    private String studentLocation;
+    private LocalDate studentDob;
 
+<span class="nc" id="L10">    public StudentList(String studentId, String studentName, String studentEmail, String studentLocation, LocalDate studentDob) {</span>
+<span class="nc" id="L11">        setStudentId(studentId);</span>
+<span class="nc" id="L12">        setStudentName(studentName);</span>
+<span class="nc" id="L13">        setStudentEmail(studentEmail);</span>
+<span class="nc" id="L14">        setStudentLocation(studentLocation);</span>
+<span class="nc" id="L15">        setStudentDob(studentDob);</span>
+<span class="nc" id="L16">    }</span>
 
-<span class="nc" id="L7">        ArrayList&lt;String&gt; student_Id = new ArrayList&lt;&gt;();</span>
-<span class="nc" id="L8">        student_Id.add(&quot;ATU1003&quot;);</span>
-<span class="nc" id="L9">        student_Id.add(&quot;ATU1004&quot;);</span>
-<span class="nc" id="L10">        student_Id.add(&quot;ATU1005&quot;);</span>
+    public String getStudentId() {
+<span class="nc" id="L19">        return studentId;</span>
+    }
 
-<span class="nc" id="L12">        ArrayList&lt;String&gt; studentName = new ArrayList&lt;&gt;();</span>
-<span class="nc" id="L13">        studentName.add(&quot;Chris Barry&quot;);</span>
-<span class="nc" id="L14">        studentName.add(&quot;Joe O'Donnell&quot;);</span>
-<span class="nc" id="L15">        studentName.add(&quot;Nicole McCarthy&quot;);</span>
+    public void setStudentId(String studentId) {
+<span class="nc bnc" id="L23" title="All 2 branches missed.">        if(studentId.length() &gt;= 4){</span>
+<span class="nc" id="L24">            this.studentId = studentId;</span>
+        }
+        else{
+<span class="nc" id="L27">            String message = &quot;Invalid Student Id Entered!&quot;;</span>
+<span class="nc" id="L28">            throw new IllegalArgumentException(message);</span>
+        }
+<span class="nc" id="L30">    }</span>
 
-<span class="nc" id="L17">        ArrayList&lt;String&gt; studentEmail = new ArrayList&lt;&gt;();</span>
-<span class="nc" id="L18">        studentEmail.add(&quot;cbarry@atu.ie&quot;);</span>
-<span class="nc" id="L19">        studentEmail.add(&quot;jOdonnell@atu.ie&quot;);</span>
-<span class="nc" id="L20">        studentEmail.add(&quot;nicolemccarthy@atu.ie&quot;);</span>
+    public String getStudentName() {
+<span class="nc" id="L33">        return studentName;</span>
+    }
 
-<span class="nc" id="L22">        ArrayList&lt;String&gt; studentLocation = new ArrayList&lt;&gt;();</span>
-<span class="nc" id="L23">        studentLocation.add(&quot;Cork&quot;);</span>
-<span class="nc" id="L24">        studentLocation.add(&quot;Clare&quot;);</span>
-<span class="nc" id="L25">        studentLocation.add(&quot;Galway&quot;);</span>
+    public void setStudentName(String studentName) {
 
-<span class="nc" id="L27">        System.out.println(student_Id);</span>
-<span class="nc" id="L28">        System.out.println(studentName);</span>
-<span class="nc" id="L29">        System.out.println(studentEmail);</span>
-<span class="nc" id="L30">        System.out.println(studentLocation);</span>
+<span class="nc bnc" id="L38" title="All 2 branches missed.">        if (studentName.length() &gt;= 4 ) {</span>
+<span class="nc" id="L39">            this.studentName = studentName;</span>
+        } else{
+<span class="nc" id="L41">            String message = &quot;Invalid Student Name Entered!&quot;;</span>
+<span class="nc" id="L42">            throw new IllegalArgumentException(message);</span>
+        }
+<span class="nc" id="L44">    }</span>
 
+    public String getStudentEmail() {
+<span class="nc" id="L47">        return studentEmail;</span>
+    }
 
+    public void setStudentEmail(String studentEmail) {
+<span class="nc" id="L51">        this.studentEmail = studentEmail;</span>
+<span class="nc" id="L52">    }</span>
 
-<span class="nc" id="L34">    }</span>
+    public String getStudentLocation() {
+<span class="nc" id="L55">        return studentLocation;</span>
+    }
+
+    public void setStudentLocation(String studentLocation) {
+<span class="nc" id="L59">        this.studentLocation = studentLocation;</span>
+<span class="nc" id="L60">    }</span>
+
+    public LocalDate getStudentDob() {
+<span class="nc" id="L63">        return studentDob;</span>
+    }
+
+    public void setStudentDob(LocalDate studentDob) {
+<span class="nc" id="L67">        this.studentDob = studentDob;</span>
+<span class="nc" id="L68">    }</span>
+
+    @Override
+    public String toString() {
+<span class="nc" id="L72">        return &quot;StudentList{&quot; +</span>
+                &quot;studentId=&quot; + studentId +
+                &quot;, studentName='&quot; + studentName + '\'' +
+                &quot;, studentEmail='&quot; + studentEmail + '\'' +
+                &quot;, studentLocation='&quot; + studentLocation + '\'' +
+                &quot;, studentDob=&quot; + studentDob +
+                '}';
+    }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

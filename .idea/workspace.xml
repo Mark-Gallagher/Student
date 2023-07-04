@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee6a0136-acd7-4446-bce8-38c1e1be1502" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/StudentListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Student.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Student.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StudentList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StudentList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StudentListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StudentListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StudentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Student.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/StudentList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StudentList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/Student.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/default/Student.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/Student.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/default/Student.java.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/StudentList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/default/StudentList.html" afterDir="false" />
@@ -28,6 +26,7 @@
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/StudentTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/StudentTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-StudentTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-StudentTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StudentListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StudentListTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/StudentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StudentTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,26 +69,38 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/IdeaProjects/OOP_examples&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Desktop/software-testing&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.6229885&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.StudentListTest.testStudentName">
-    <configuration name="StudentList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StudentList" />
+  <component name="RunManager" selected="JUnit.StudentListTest.testConstructorInvalidStudentDOB">
+    <configuration name="StudentListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Student" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StudentListTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentListTest.listStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentListTest.testConstructorInvalidStudentDOB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Student" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StudentListTest" />
-      <option name="METHOD_NAME" value="listStudents" />
+      <option name="METHOD_NAME" value="testConstructorInvalidStudentDOB" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentListTest.testConstructorInvalidStudentLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Student" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StudentListTest" />
+      <option name="METHOD_NAME" value="testConstructorInvalidStudentLocation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,39 +116,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentListTest.testStudentName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Write tests for method StudentList.&lt;init&gt;" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
       <module name="Student" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StudentListTest" />
-      <option name="METHOD_NAME" value="testStudentName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Student" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StudentTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <settings run-config-name="Write tests for method StudentList.&lt;init&gt;" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>method</selection-scope>
+        <selected-element key="StudentList.&lt;init&gt;:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;)V" />
+      </settings>
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.StudentList" />
-      <item itemvalue="JUnit.StudentListTest.listStudents" />
-      <item itemvalue="JUnit.StudentListTest.testStudentName" />
+      <item itemvalue="JUnit.StudentListTest.testConstructorInvalidStudentDOB" />
+      <item itemvalue="JUnit.StudentListTest.testConstructorInvalidStudentLocation" />
       <item itemvalue="JUnit.StudentListTest.testStudentId" />
-      <item itemvalue="JUnit.StudentTest" />
+      <item itemvalue="JUnit.StudentListTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StudentListTest.testStudentName" />
-        <item itemvalue="JUnit.StudentListTest.listStudents" />
+        <item itemvalue="JUnit.StudentListTest" />
+        <item itemvalue="JUnit.StudentListTest.testConstructorInvalidStudentLocation" />
         <item itemvalue="JUnit.StudentListTest.testStudentId" />
-        <item itemvalue="Application.StudentList" />
-        <item itemvalue="JUnit.StudentTest" />
+        <item itemvalue="JUnit.StudentListTest.testConstructorInvalidStudentDOB" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +162,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/feature-four" />
+                        <option value="origin/feature-five" />
                       </list>
                     </value>
                   </entry>
@@ -202,5 +201,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Student$StudentList.ic" NAME="StudentList Coverage Results" MODIFIED="1684275526043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Student$StudentListTest_testConstructorInvalidStudentLocation.ic" NAME="StudentListTest.testConstructorInvalidStudentLocation Coverage Results" MODIFIED="1688506905066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Student$StudentListTest_testConstructorInvalidStudentEmail.ic" NAME="StudentListTest.testConstructorInvalidStudentEmail Coverage Results" MODIFIED="1688505865554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Student$StudentListTest_testStudentEmail.ic" NAME="StudentListTest.testStudentEmail Coverage Results" MODIFIED="1688420068391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Student$StudentListTest_testStudentLocation.ic" NAME="StudentListTest.testStudentLocation Coverage Results" MODIFIED="1688420176257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Student$StudentListTest.ic" NAME="StudentListTest Coverage Results" MODIFIED="1688510246254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Student$StudentTest.ic" NAME="StudentTest Coverage Results" MODIFIED="1688485694765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Student$All_in_Student.ic" NAME="All in Student Coverage Results" MODIFIED="1688419047033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

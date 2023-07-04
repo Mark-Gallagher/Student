@@ -10,11 +10,11 @@ public class StudentList {
     private LocalDate studentDob;
 
     public StudentList(String studentId, String studentName, String studentEmail, String studentLocation, LocalDate studentDob) {
-        this.studentId = studentId;
-        this.studentName = studentName;
-        this.studentEmail = studentEmail;
-        this.studentLocation = studentLocation;
-        this.studentDob = studentDob;
+        setStudentId(studentId);
+        setStudentName(studentName);
+        setStudentEmail(studentEmail);
+        setStudentLocation(studentLocation);
+        setStudentDob(studentDob);
     }
 
     public String getStudentId() {
@@ -22,7 +22,13 @@ public class StudentList {
     }
 
     public void setStudentId(String studentId) {
-        this.studentId = studentId;
+        if(studentId.length() >= 4){
+            this.studentId = studentId;
+        }
+        else{
+            String message = "Invalid Student Id Entered!";
+            throw new IllegalArgumentException(message);
+        }
     }
 
     public String getStudentName() {
@@ -30,7 +36,13 @@ public class StudentList {
     }
 
     public void setStudentName(String studentName) {
-        this.studentName = studentName;
+
+        if (studentName.length() >= 4 && studentName.length() <= 30) {
+            this.studentName = studentName;
+        } else{
+            String message = "Invalid Student Name Entered!";
+            throw new IllegalArgumentException(message);
+        }
     }
 
     public String getStudentEmail() {
@@ -38,7 +50,13 @@ public class StudentList {
     }
 
     public void setStudentEmail(String studentEmail) {
-        this.studentEmail = studentEmail;
+        if(studentEmail.contains("@")){
+            this.studentEmail = studentEmail;
+        }else {
+            String message = "Invalid Student Email Entered!";
+            throw new IllegalArgumentException(message);
+        }
+
     }
 
     public String getStudentLocation() {
@@ -46,15 +64,26 @@ public class StudentList {
     }
 
     public void setStudentLocation(String studentLocation) {
-        this.studentLocation = studentLocation;
+        if (!Character.isUpperCase(studentLocation.charAt(0))) {
+            String message = "Invalid Student Location Entered!";
+            throw new IllegalArgumentException(message);
+        }else {
+            this.studentLocation = studentLocation;
+        }
     }
-
     public LocalDate getStudentDob() {
         return studentDob;
     }
 
     public void setStudentDob(LocalDate studentDob) {
-        this.studentDob = studentDob;
+        LocalDate localDate = LocalDate.of(1992,5,31);
+        if(studentDob.isAfter(localDate)){
+            this.studentDob = studentDob;
+        }else{
+            String message = "Invalid Student Date Of Birth Entered!";
+            throw new IllegalArgumentException(message);
+        }
+
     }
 
     @Override
