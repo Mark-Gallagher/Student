@@ -22,10 +22,9 @@ public class Student {
     }
 
     public void setStudentId(String student_id) {
-        if(student_id.length() >= 4 && student_id.length() <= 7){
+        if(student_id.length() > 4 && student_id.length() <= 7 ){
             this.student_id = student_id;
-        }
-        else{
+        } else{
             String message = "Invalid student id number Entered!";
             throw new IllegalArgumentException(message);
         }
